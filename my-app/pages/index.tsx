@@ -2,8 +2,11 @@ import { useState } from 'react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName:'',
     email: '',
+    phone:'',
+    services:'',
     message: ''
   });
 
@@ -38,12 +41,24 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} />
+        First Name:
+        <input type="text" name="name" value={formData.firstName} onChange={handleChange} />
       </label>
+      <label>
+        Last Name:
+        <input type="text" name="name" value={formData.lastName} onChange={handleChange} />
+      </label>      
       <label>
         Email:
         <input type="email" name="email" value={formData.email} onChange={handleChange} />
+      </label>
+      <label>
+        Phone:
+        <input type="number" name="phone" value={formData.phone} onChange={handleChange} />
+      </label>
+      <label>
+        Services
+        <textarea name="Services" value={formData.services} onChange={handleChange} />
       </label>
       <label>
         Message:
