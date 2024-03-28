@@ -7,7 +7,7 @@ export default function handler(req:any, res:any) {
       }
       res.status(200).json({ message: 'Form submitted successfully.' });
     } else {
-      res.status(405).end(`Method Not Allowed`);
+      res.status(405).end(`Method ${req.method} Not Allowed`);
     }
   }
 

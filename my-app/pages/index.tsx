@@ -39,7 +39,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-8 max-w-lg mx-auto bg-gray-500 rounded-md shadow-md overflow-hidden">
+    
+    <div className="mt-6 max-w-lg mx-auto bg-gray-400 rounded-md shadow-md overflow-hidden">
+      <h2 className="text-lg font-bold flex justify-center mt-4">CONTACT US</h2>
+
   <div className="p-6">
     <form onSubmit={handleSubmit}>
 
@@ -61,7 +64,7 @@ const ContactForm = () => {
 
       <div className="mb-4">
         <label className="block mb-2">Services:</label>
-        <textarea name="services" value={formData.services} onChange={handleChange} placeholder="Services" className="w-full py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" required />
+        <input type="text" name="services" value={formData.services} onChange={handleChange} placeholder="Services" className="w-full py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" required />
       </div>
 
       <div className="mb-4">
@@ -69,7 +72,7 @@ const ContactForm = () => {
         <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" className="w-full py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" required />
       </div>
 
-      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Submit</button>
+      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300  mx-auto block">Submit</button>
     </form>
   </div>
 </div>
