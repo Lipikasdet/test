@@ -42,27 +42,27 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       <label>
         First Name:
-        <input type="text" name="name" value={formData.firstName} onChange={handleChange} />
+        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required/>
       </label>
       <label>
         Last Name:
-        <input type="text" name="name" value={formData.lastName} onChange={handleChange} />
+        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required/>
       </label>      
       <label>
         Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        <input type="email" name="email" value={formData.email} onChange={handleChange} required/>
       </label>
       <label>
         Phone:
-        <input type="number" name="phone" value={formData.phone} onChange={handleChange} />
+        <input type="number" name="phone" value={formData.phone} onChange={handleChange}required />
       </label>
       <label>
         Services
-        <textarea name="Services" value={formData.services} onChange={handleChange} />
+        <textarea name="services" value={formData.services} onChange={handleChange} required/>
       </label>
       <label>
         Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} />
+        <textarea name="message" value={formData.message} onChange={handleChange}required />
       </label>
       <button type="submit">Submit</button>
     </form>
