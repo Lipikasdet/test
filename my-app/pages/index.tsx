@@ -59,7 +59,7 @@ const ContactForm = () => {
         <label className="block mb-2">Email:</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" className="w-full mb-2 py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" required />
         <label className="block mb-2">Phone:</label>
-        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" className="w-full py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" required />
+        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" className="w-full py-2 px-3 border rounded-md focus:outline-none focus:ring focus:border-blue-500" pattern="[0-9]*" title="Please enter only numeric characters" required />
       </div>
 
       <div className="mb-4">
