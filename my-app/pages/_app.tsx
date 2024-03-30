@@ -4,6 +4,6 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return <>
   <Component {...pageProps} />
-  <script src='js/script.js'></script>
+  <script src='js/script.js' async></script>
   </>;
 }
